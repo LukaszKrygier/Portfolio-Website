@@ -400,7 +400,7 @@ main {
 
 #start-button {
   min-width: 104px;
-  background-image: url('../assets/start-button.png');
+  background-image: url('assets/start-button.png');
   width: 6.5rem;
   background-size: auto 100%;
   background-repeat: no-repeat;
