@@ -1,0 +1,31 @@
+body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: 
+        url(../assets/blinking-animation/ba-1.svg)
+        url(../assets/blinking-animation/ba-2.svg)
+        url(../assets/blinking-animation/ba-3.svg)
+        url(../assets/blinking-animation/ba-4.svg)
+        url(../assets/blinking-animation/ba-5.svg)
+        url(../assets/blinking-animation/ba-6.svg);
+  }
+
+
+
+  :root {
+
+  /* Blinking Animation */
+
+    --ba-1: url(../assets/blinking-animation/ba-1.svg);
+    --ba-2: url(../assets/blinking-animation/ba-2.svg);
+    --ba-3: url(../assets/blinking-animation/ba-3.svg);
+    --ba-4: url(../assets/blinking-animation/ba-4.svg);
+    --ba-5: url(../assets/blinking-animation/ba-5.svg);
+    --ba-6: url(../assets/blinking-animation/ba-6.svg);
+
+  }
+
+
