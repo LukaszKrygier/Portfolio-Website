@@ -574,6 +574,7 @@ label {
 .close-button {
   float: right;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .header-buttons {
