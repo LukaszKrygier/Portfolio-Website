@@ -1,7 +1,7 @@
 body:after {
     position: absolute;
-    width: 0;
-    height: 0;
+    width: 150;
+    height: 150;
     overflow: hidden;
     z-index: -1;
     content: 
