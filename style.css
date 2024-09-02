@@ -97,18 +97,18 @@ h2, p, h3 {
 /* ABOUT SECTION */
 
 .about-container {
-  margin-bottom: 1rem;
+  margin: 0 2rem 1rem 2rem;
 }
 
 .about-icon {
-  width: 2rem;
+  width: 2.5rem;
   align-items: center;
 }
 
 /* HARD SKILLS SECTION */
 
 .skills-icon {
-  width: 2rem;
+  width: 2.5rem;
 }
 
 .article-container {
@@ -236,7 +236,7 @@ h2, p, h3 {
 }
 
 .file .image img {
-  width: 40px; /* Adjust the size of the icons as needed */
+  width: 2.5rem; /* Adjust the size of the icons as needed */
   height: auto;
 }
 
