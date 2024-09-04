@@ -147,7 +147,7 @@ h2, p, h3 {
 }
 
 .project-image {
-  width: 120%; /* Adjust the size of the image as needed */
+  width: 200%; /* Adjust the size of the image as needed */
   max-width: 250px;
   height: 300px;
   position: relative;
