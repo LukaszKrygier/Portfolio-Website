@@ -1,19 +1,23 @@
 @media screen and (min-width: 1601px) {
+    
     .window-container {
         width: 60%;
         height: 80%;
     }
+    
     .section__pic-container {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
     }
 }
 
 @media screen and (max-width: 1600px) {
+    
     .window-container {
         width: 60%;
         height: 80%;
     }
+    
     .section__pic-container {
         width: 250px;
         height: 250px;
@@ -21,52 +25,31 @@
 }
 
 @media screen and (max-width: 1400px) {
+    
     .window-container {
         width: 60%;
         height: 80%;
     }
+    
     .section__pic-container {
         width: 250px;
         height: 250px;
     }
 }
-
 @media screen and (max-width: 1200px) {
     .section__pic-container {
         width: 200px;
         height: 200px;
     }
+    
     .window-container {
         width: 70%;
         height: 80%;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .section__pic-container {
-        width: 80vw;
-        height: auto;
-    }
-
-    .content {
-        padding: 1rem;
-        flex-direction: column;
-    }
-
-    .main-container {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .window-container {
-        width: 90%;
-        height: auto;
-        top: 5%;
-        left: 5%;
-    }
-}
-
 @media screen and (max-width: 600px) {
+
     .section__pic-container {
         width: 150px;
         height: 150px;
@@ -93,6 +76,7 @@
 } 
 
 @media screen and (max-width: 400px) {
+
     .section__pic-container {
         width: 150px;
         height: 150px;
@@ -106,8 +90,8 @@
         width: 102.5vw;
     }
 }
-
 @media screen and (max-width: 300px) {
+
     .section__pic-container {
         width: 150px;
         height: 150px;
