@@ -1,6 +1,6 @@
 # Lukasz Krygier - Portfolio Website
 
-Welcome to my portfolio website repository! This project is a personal showcase of my skills, projects, and experience as an aspiring software developer.
+Welcome to my portfolio website repository! This project is a personal showcase of my skills, projects, and experience as an aspiring full stack developer.
 
 ## Table of Contents
 - [Live Demo](#live-demo)
