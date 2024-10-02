@@ -116,6 +116,23 @@
     }
 }
 
+@media screen and (max-width: 393px) {
+
+    .section__pic-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    #start-menu {
+        width: 80vw;
+    }
+
+    #window-start-menu-blue {
+        width: 98vw;
+        font-weight: inherit;
+    }
+}
+
 @media screen and (max-width: 391px) {
 
     .section__pic-container {
