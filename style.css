@@ -125,10 +125,10 @@ h2, p, h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Align items to the top */
+  justify-content: flex-start; 
   height: 100%;
-  padding: 2rem 0 5rem 0; /* Add padding at the top */
-  gap: 2rem; /* Adjust the gap as needed */
+  padding: 2rem 0 5rem 0; 
+  gap: 2rem; 
   overflow-y: auto;
 }
 
@@ -137,21 +137,21 @@ h2, p, h3 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1rem; /* Adjust the gap between title, image, and button as needed */
+  gap: 1rem; 
 }
 
 .project-title {
-  font-family: "Arial", sans-serif; /* Same font family as the rest of the titles */
+  font-family: "Arial", sans-serif; 
   font-size: 1.2rem;
   font-weight: 400;
 }
 
 .project-image {
-  width: 200%; /* Adjust the size of the image as needed */
+  width: 200%; 
   max-width: 250px;
   height: 300px;
   position: relative;
-  overflow: hidden; /* Ensure the image does not overflow the container */
+  overflow: hidden; 
   border: 1px solid #465252dc;
   box-shadow:
     0 2.8px 2.2px rgba(108, 108, 108, 0.034),
@@ -168,27 +168,27 @@ h2, p, h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image covers the container */
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition for zoom and opacity effect */
+  object-fit: cover; 
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; 
 }
 
 .project-image .image-zoom {
-  transform: scale(1.2); /* Zoom in at first glance */
+  transform: scale(1.2); 
   opacity: 1;
 }
 
 .project-image .image-full {
-  transform: scale(1.2); /* Start zoomed in */
+  transform: scale(1.2); 
   opacity: 0;
 }
 
 .project-image:hover .image-zoom {
-  transform: scale(1); /* Zoom out to show the whole image on hover */
+  transform: scale(1); 
   opacity: 0;
 }
 
 .project-image:hover .image-full {
-  transform: scale(1); /* Zoom out to show the whole image on hover */
+  transform: scale(1);
   opacity: 1;
 }
 
@@ -222,29 +222,29 @@ h2, p, h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-: flex-start; /* Align items to the top */
-  height: 100vh; /* Adjust this as needed */
-  padding: 2rem 0 5rem 0; /* Add padding at the top */
-  gap: 20px; /* Adjust the gap as needed */
+  justify-: flex-start;
+  height: 100vh;
+  padding: 2rem 0 5rem 0;
+  gap: 20px;
 }
 
 .file {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px; /* Adjust the gap between image and text as needed */
+  gap: 10px;
 }
 
 .file .image img {
-  width: 2.5rem; /* Adjust the size of the icons as needed */
+  width: 2.5rem;
   height: auto;
 }
 
 .file .text a, .file .image a {
   text-decoration: none;
-  color: #000; /* Adjust the text color as needed */
-  font-size: 16px; /* Adjust the font size as needed */
-  text-align: center; /* Center align the text */
+  color: #000;
+  font-size: 16px;
+  text-align: center;
 }
 
 /* MAIN CONTAINER */
