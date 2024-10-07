@@ -18,9 +18,9 @@ function openWindow(windowId) {
     }
 
     const windowElement = document.getElementById(windowId);
-    windowElement.style.display = "flex"; // Ensure the window is displayed as flex
+    windowElement.style.display = "flex";
 
-    centerWindow(windowElement); // Center the window
+    centerWindow(windowElement); 
 
     currentOpenWindow = windowId;
 
@@ -186,7 +186,7 @@ document.querySelectorAll('.window-container').forEach(window => {
 document.querySelectorAll('.minimize').forEach(minimizeButton => {
     minimizeButton.addEventListener('click', () => {
         const windowId = minimizeButton.closest('.window-container').id;
-        toggleTabStyle(windowId, true); // Pass true to indicate minimized state
+        toggleTabStyle(windowId, true); 
     });
 });
 
@@ -194,7 +194,7 @@ document.querySelectorAll('.minimize').forEach(minimizeButton => {
 document.querySelectorAll('.start-bar-tab').forEach(tab => {
     tab.addEventListener('click', () => {
         const windowId = tab.getAttribute('for');
-        toggleTabStyle(windowId); // Toggle active class
+        toggleTabStyle(windowId); 
     });
 });
 
@@ -239,9 +239,9 @@ startMenu.querySelectorAll('.start-menu-item').forEach(item => {
         // Additional logic for handling the click of start menu items
         const windowId = item.getAttribute('for');
         if (windowId) {
-            openWindow(windowId); // Example function to open windows based on the item clicked
+            openWindow(windowId); 
         }
-        event.stopPropagation(); // Prevent the click from bubbling up and closing the menu immediately
+        event.stopPropagation(); 
     });
 });
 
@@ -250,8 +250,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Ensure the loadingScreen element is present
     if (loadingScreen) {
-        // Set a minimum display time for the loading screen (e.g., 3 seconds)
-        var minimumDisplayTime = 3000; // 3 seconds in milliseconds
+        // Set a minimum display time for the loading screen
+        var minimumDisplayTime = 3000; 
         var startTime = new Date().getTime();
       
         window.addEventListener('load', function() {
