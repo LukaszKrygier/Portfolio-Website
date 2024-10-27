@@ -33,20 +33,19 @@ h2, p, h3 {
 /* PROFILE SECTION */
 
 .section__pic-container {
-  animation-name: hover, play-animation;
-  animation-duration: 1.5s, 3.75s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  background-image: var(--ba-1);
-  background-position: center;
-  background-size: cover;
-  width: 20vw;
-  height: 40vh;
-  max-width: 40rem;
-  max-height: 80rem;
-  margin: 0 0 1rem 0;
-}
+    width: 100px;  
+    height: 100px; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 
+.section__pic-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+
+}
 .content {
   flex-grow: 1;
   display: flex;
