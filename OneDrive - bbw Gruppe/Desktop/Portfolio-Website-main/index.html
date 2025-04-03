@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukasz Krygier - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="head-animation.css">
+    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+</head>
+<body>
+    <div id="login-screen">
+        <div class="login-window windows-box-shadow">
+            <div class="header">Willkommen in meinem Portfolio</div>
+            <div class="login-content"> 
+                <img src="assets/login-header.png" alt="">
+                <div class="select-box inverse-windows-box-shadow">
+                    <label>Lukasz Krygier</label>
+                </div>
+                <div class="login">
+                    <label class="windows-box-shadow">Login</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="window">
+        <div class="main-container">
+            <div id="start-bar">
+                <div id="left-section">
+                    <div id="start-menu" class="windows-box-shadow">
+                        <div id="window-start-menu-blue">
+                            © 2024 LK.
+                            <span>All rights reserved.</span>
+                        </div>
+                        <ul>
+                            <li class="line">
+                                <label class="start-menu-item" onclick="openWindow('profile-window')">
+                                    <img src="assets/profile.png" alt="">
+                                    Profil
+                                </label>
+                            </li>
+                            <li>
+                                <label class="start-menu-item" onclick="openWindow('about-me-window')">
+                                    <img src="assets/about-me.png" alt="">
+                                    Über mich
+                                </label>
+                            </li>
+                            <li>
+                                <label class="start-menu-item" onclick="openWindow('hard-skills-window')">
+                                    <img src="assets/hard-skills.png" alt="">
+                                    Hard skills
+                                </label>
+                            </li>
+                            <li class="line">
+                                <label class="start-menu-item" onclick="openWindow('soft-skills-window')">
+                                    <img src="assets/soft-skills.png" alt="">
+                                    Soft skills
+                                </label>
+                            </li>
+                            <li>
+                                <label class="start-menu-item" onclick="openWindow('projects-window')">
+                                    <img src="assets/projects.png" alt="">
+                                    Projects
+                                </label>
+                            </li>
+                            <li>
+                                <label class="start-menu-item" onclick="openWindow('contact-me-window')">
+                                    <img src="assets/contact-me.png" alt="">
+                                    Kontakt aufnehmen
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <label id="start-button" class="windows-box-shadow"></label>
+                    <div id="items">
+                        <div class="start-bar-tab" for="profile-window">
+                            <span><img src="assets/profile.png" alt=""></span>
+                            <span><p>Profil</p></span>
+                        </div>
+                        <div class="start-bar-tab" for="about-me-window">
+                            <span><img src="assets/about-me.png" alt=""></span>
+                            <span><p>Über mich</p></span>
+                        </div>
+                        <div class="start-bar-tab" for="hard-skills-window">
+                            <span><img src="assets/hard-skills.png" alt=""></span>
+                            <span><p>Hard skills</p></span>
+                        </div>
+                        <div class="start-bar-tab" for="soft-skills-window">
+                            <span><img src="assets/soft-skills.png" alt=""></span>
+                            <span><p>Soft skills</p></span>
+                        </div>
+                        <div class="start-bar-tab" for="projects-window">
+                            <span><img src="assets/projects.png" alt=""></span>
+                            <span><p>Projects</p></span>
+                        </div>
+                        <div class="start-bar-tab" for="contact-me-window">
+                            <span><img src="assets/contact-me.png" alt=""></span>
+                            <span><p>Kontakt aufnehmen</p></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="time-options">
+                    <span id="clock"></span>
+                </div>
+            </div>
+            <div id="desktop">
+                <label for="profile-window" class="desktop-item" onclick="openWindow('profile-window')">
+                    <div class="icon">
+                        <img src="assets/profile.png" alt="">
+                    </div>
+                    <div class="text">Profil</div>
+                </label>
+                <label for="about-me-window" class="desktop-item" onclick="openWindow('about-me-window')">
+                    <div class="icon">
+                        <img src="assets/about-me.png" alt="">
+                    </div>
+                    <div class="text">Über mich</div>
+                </label>
+                <label for="hard-skills-window" class="desktop-item" onclick="openWindow('hard-skills-window')">
+                    <div class="icon">
+                        <img src="assets/hard-skills.png" alt="">
+                    </div>
+                    <div class="text">Hard skills</div>
+                </label>
+                <label for="soft-skills-window" class="desktop-item" onclick="openWindow('soft-skills-window')">
+                    <div class="icon">
+                        <img src="assets/soft-skills.png" alt="">
+                    </div>
+                    <div class="text">Soft skills</div>
+                </label>
+                <label for="projects-window" class="desktop-item" onclick="openWindow('projects-window')">
+                    <div class="icon">
+                        <img src="assets/projects.png" alt="">
+                    </div>
+                    <div class="text">Projects</div>
+                </label>
+                <label for="contact-me-window" class="desktop-item" onclick="openWindow('contact-me-window')">
+                    <div class="icon">
+                        <img src="assets/contact-me.png" alt="">
+                    </div>
+                    <div class="text">Kontakt aufnehmen</div>
+                </label>
+            </div>
+            <div id="profile-window" class="window-container">
+                <div class="details-container">
+                    <h2 class="title">Profil</h2>
+                    <div class="header-buttons">
+                        <label class="minimize windows-box-shadow"></label>
+                        <label class="maximize windows-box-shadow"></label>
+                        <label class="close windows-box-shadow" onclick="closeWindow('profile-window')">X</label>
+                    </div>
+                    <div class="options line">
+                        <div class="item">File</div>
+                        <div class="item">Edit</div>
+                        <div class="item">Views</div>
+                        <div class="item">Help</div>
+                    </div>
+                    <div class="content">
+                        <div class="section__pic-container">
+                        </div>
+                        <div class="section__text">
+                            <p class="section__text__p1">Hallo, Ich bin</p>
+                            <h1>Lukasz Krygier</h1>
+                            <p class="section__text__p2">Angestrebter Softwareentwickler</p>
+                            <div class="btn-container">
+                                <label class="windows-box-shadow" onclick="window.open('./assets/resume.pdf', '_blank')">
+                                    Lebenslauf
+                                </label>
+                                <label id="contact-button" class="windows-box-shadow" onclick="openContactMeWindow()">
+                                    Kontakt
+                                </label>
+                            </div>
+                            <div id="socials-container">
+                                <img src="assets/linkedin.png" alt="My LinkedIn profile" class="social-icon" onclick="window.open('https://linkedin.com/in/lukasz-krygier-73410b325', '_blank')"/>
+                                <img src="assets/github.png" alt="My Github profile" class="social-icon" onclick="window.open('https://github.com/LukaszKrygier', '_blank')"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="about-me-window" class="window-container">
+                <div class="details-container">
+                    <h2 class="title">Über mich</h2>
+                    <div class="header-buttons">
+                        <label class="minimize windows-box-shadow"></label>
+                        <label class="maximize windows-box-shadow"></label>
+                        <label class="close windows-box-shadow" onclick="closeWindow('about-me-window')">X</label>
+                    </div>
+                    <div class="options line">
+                        <div class="item">File</div>
+                        <div class="item">Edit</div>
+                        <div class="item">Views</div>
+                        <div class="item">Help</div>
+                    </div>
+                    <div class="content">
+                        <div class="about-container">
+                            <img src="assets/experience.png" alt="Experience icon" class="about-icon"/>
+                            <h3>Erfahrung</h3>
+                        </br>
+                            <p>
+                                Ich habe in den letzten Jahren immer wieder mit Webentwicklung und Softwareentwicklung gearbeitet, wobei ich meine Fähigkeiten in HTML, CSS, JavaScript, Python, Java und C# stetig erweitert habe. Dabei habe ich auch mit verschiedenen Frameworks und Technologien wie Visual Studio, VS Code, Eclipse, JavaFX und Swing gearbeitet. Meine Neugier und Leidenschaft treiben mich an, mich kontinuierlich weiterzuentwickeln und benutzerfreundliche sowie funktionale Anwendungen und Websites zu erstellen.
+                            </p>
+                        </div>
+                        <div class="about-container">
+                            <img src="assets/education.png" alt="Education icon" class="about-icon"/>
+                            <h3>Bildung</h3>
+                        </br>
+                            <p>
+                                Ich befinde mich derzeit in der Umschulung zum Fachinformatiker für Anwendungsentwicklung bei der FAW gGmbH in Höxter. In den ersten Monaten habe ich mich auf Themen wie Wirtschaft und Sozialkunde, Netzwerktechnik, Virtualisierung und andere wichtige IT-Themen konzentriert. Wir haben bereits mit dem Erlernen verschiedener Programmiersprachen wie Python, Java, C#, C++ und JavaScript begonnen. Obwohl der Unterricht in einigen Bereichen noch am Anfang steht, übe ich weiterhin selbstständig, um meine Fähigkeiten zu vertiefen, wann immer sich die Gelegenheit dazu bietet.
+                            </p>
+                        </div>
+                        <div class="about-container">
+                            <img src="assets/passionandgoals.png" alt="Education icon" class="about-icon"/>
+                            <h3>Leidenschaft & Ziele</h3>
+                        </br>
+                            <p>
+                                Was als Hobby begann, hat sich zu einer wahren Leidenschaft entwickelt, intuitive und ansprechende digitale Erlebnisse zu schaffen. Mein Ziel ist es, weiterhin auf dem aufzubauen, was ich gelernt habe, in neue Technologien einzutauchen und schließlich ein versierter Full-Stack-Entwickler zu werden, der einen bedeutenden Einfluss auf die Projekte hat, an denen er arbeitet. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="hard-skills-window" class="window-container">
+                <div class="details-container">
+                    <h2 class="title">Hard skills</h2>
+                    <div class="header-buttons">
+                        <label class="minimize windows-box-shadow"></label>
+                        <label class="maximize windows-box-shadow"></label>
+                        <label class="close windows-box-shadow" onclick="closeWindow('hard-skills-window')">X</label>
+                    </div>
+                    <div class="options line">
+                        <div class="item">File</div>
+                        <div class="item">Edit</div>
+                        <div class="item">Views</div>
+                        <div class="item">Help</div>
+                    </div>
+                    <div class="content">
+                        <div class="article-container">
+                            <article>
+                                <img src="assets/html.png" alt="HTML icon" class="skills-icon"/>
+                                <div>
+                                    <h3>HTML</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/css.png" alt="CSS icon" class="skills-icon"/>
+                                <div>
+                                    <h3>CSS</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/js.png" alt="JavaScript icon" class="skills-icon"/>
+                                <div>
+                                    <h3>JavaScript</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/python.png" alt="Python icon" class="skills-icon"/>
+                                <div>
+                                    <h3>Python</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/java.png" alt="Java icon" class="skills-icon"/>
+                                <div>
+                                    <h3>Java</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/c-sharp.png" alt="C# icon" class="skills-icon"/>
+                                <div>
+                                    <h3>C#</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/dotnet.png" alt="C# icon" class="skills-icon"/>
+                                <div>
+                                    <h3>.NET</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/git.png" alt="Git icon" class="skills-icon"/>
+                                <div>
+                                    <h3>Git</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/github-desktop.png" alt="Git icon" class="skills-icon"/>
+                                <div>
+                                    <h3>GitHub Desktop</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="soft-skills-window" class="window-container">
+                <div class="details-container">
+                    <h2 class="title">Soft skills</h2>
+                    <div class="header-buttons">
+                        <label class="minimize windows-box-shadow"></label>
+                        <label class="maximize windows-box-shadow"></label>
+                        <label class="close windows-box-shadow" onclick="closeWindow('soft-skills-window')">X</label>
+                    </div>
+                    <div class="options line">
+                        <div class="item">File</div>
+                        <div class="item">Edit</div>
+                        <div class="item">Views</div>
+                        <div class="item">Help</div>
+                    </div>
+                    <div class="content">
+                        <div class="article-container">
+                            <article>
+                                <img src="assets/checkmark.png" alt="Creativity icon" class="skills-icon"/>
+                                <div>
+                                    <h3>Kreativität</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Communication icon" class="skills-icon"/>
+                                <div>
+                                    <h3>Kommunikation</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Problem-solving icon" class="skills-icon"/>
+                                <div>
+                                    <h3>Problemlösung</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Patience icon" class="skills-icon"/>
+                                <div>
+                                    <h3>Geduld</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Time management icon" class="skills-icon"/>
+                                <div>
+                                    <h3>Zeitmanagement</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Flexibility icon" class="skills-icon"/>
+                                <div>
+                                    <h3>Flexibilität</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projects-window" class="window-container">
+                <div class="details-container">
+                    <h2 class="title">Projects</h2>
+                    <div class="header-buttons">
+                        <label class="minimize windows-box-shadow"></label>
+                        <label class="maximize windows-box-shadow"></label>
+                        <label class="close windows-box-shadow" onclick="closeWindow('projects-window')">X</label>
+                    </div>
+                    <div class="options line">
+                        <div class="item">File</div>
+                        <div class="item">Edit</div>
+                        <div class="item">Views</div>
+                        <div class="item">Help</div>
+                    </div>
+                    <div class="content-projects">
+                        <div class="project">
+                            <h3 class="project-title">Windows 98 Portfolio-Website</h3>
+                            <div class="project-image">
+                                <img src="assets/project1.PNG" alt="Portfolio Website Project">
+                                <img src="assets/project1-2.PNG" alt="Portfolio Website Project Zoomed Out" class="image-full">
+                            </div>
+                            <div class="btn-container">
+                                <label class="windows-box-shadow" onclick="window.open('https://github.com/LukaszKrygier/Portfolio-Website', '_blank')">
+                                    GitHub
+                                </label>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h3 class="project-title">Taschenrechner-App</h3>
+                            <div class="project-image-calculator">
+                                <img src="assets/calculator.png" alt="Calculator App">
+                                <!--<img src="assets/project3-2.png" alt="Web Game Zoomed Out" class="image-full">-->
+                            </div>
+                            <div class="btn-container">
+                                <label class="windows-box-shadow" onclick="window.open('https://github.com/LukaszKrygier/CalculatorApp', '_blank')">
+                                    GitHub
+                                </label>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h3 class="project-title">To-Do-Liste-App</h3>
+                            <div class="project-image-todoapp">
+                                <img src="assets/todoapp.png" alt="To-Do List App">
+                            </div>
+                            <div class="btn-container">
+                                <label class="windows-box-shadow" onclick="window.open('https://github.com/LukaszKrygier/ToDoApp', '_blank')">
+                                    GitHub
+                                </label>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h3 class="project-title">Adventure Game (In Arbeit)</h3>
+                            <div class="project-image-game">
+                                <img src="assets/game.PNG" alt="Adventure Game">
+                            </div>
+                            <div class="btn-container">
+                                <label class="windows-box-shadow" onclick="window.open('https://github.com/LukaszKrygier', '_blank')">
+                                    GitHub
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact-me-window" class="window-container">
+                <div class="details-container">
+                    <h2 class="title">Kontakt aufnehmen</h2>
+                    <div class="header-buttons">
+                        <label class="minimize windows-box-shadow"></label>
+                        <label class="maximize windows-box-shadow"></label>
+                        <label class="close windows-box-shadow" onclick="closeWindow('contact-me-window')">X</label>
+                    </div>
+                    <div class="options line">
+                        <div class="item">File</div>
+                        <div class="item">Edit</div>
+                        <div class="item">Views</div>
+                        <div class="item">Help</div>
+                    </div>
+                    <div class="content-contact-me">
+                        <label class="file">
+                            <span class="image"><a href="mailto:lukasz.krygier.dev@gmail.com"><img src="assets/email.png" alt="Email Icon"></a></span>
+                            <span class="text"><a href="mailto:lukasz.krygier.dev@gmail.com">E-Mail</a></span>
+                        </label>
+                        <label class="file">
+                            <span class="image"><a href="https://linkedin.com/in/lukasz-krygier-73410b325" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn Icon"></a></span>
+                            <span class="text"><a href="https://linkedin.com/in/lukasz-krygier-73410b325" target="_blank">LinkedIn</a></span>
+                        </label>
+                        <label class="file">
+                            <span class="image"><a href="https://github.com/LukaszKrygier" target="_blank"><img src="assets/github.png" alt="GitHub Icon"></a></span>
+                            <span class="text"><a href="https://github.com/" target="_blank">GitHub</a></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="time.js"></script>
+</body>
+</html>
